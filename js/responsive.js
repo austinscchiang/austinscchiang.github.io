@@ -59,7 +59,7 @@ function scrollOnOne(){
             photoThreeOnScreen = false;
         }
         if(photoOneOnScreen){
-            document.body.style.background="url('css/images/image.jpg') no-repeat center center fixed";
+            document.body.style.background="url('images/image.jpg') no-repeat center center fixed";
             document.body.style.backgroundSize = "cover";
         }
     }
@@ -73,7 +73,7 @@ function scrollOnTwo(){
             photoThreeOnScreen = false;
         }
         if(photoTwoOnScreen){
-            document.body.style.background="url('css/images/cat.jpg') no-repeat center center fixed";
+            document.body.style.background="url('images/cat.jpg') no-repeat center center fixed";
             document.body.style.backgroundSize = "cover";
         }
     }
@@ -87,7 +87,7 @@ function scrollOnThree(){
             photoThreeOnScreen = true;
         }
         if(photoThreeOnScreen){
-            document.body.style.background="url('css/images/clock.jpg') no-repeat center center fixed";
+            document.body.style.background="url('images/clock.jpg') no-repeat center center fixed";
             document.body.style.backgroundSize = "cover";
         }
     }
