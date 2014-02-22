@@ -1,6 +1,9 @@
 var photoOneOnScreen = false;
 var photoTwoOnScreen = false;
 var photoThreeOnScreen = false;
+var distance = $('nav.navbar').offset().top, $window = $(window);
+var navbar_top = false;
+
 function adjustBlockSize() {
     var heroBlockArray = document.querySelectorAll(".hero");
     console.log(heroBlockArray);
@@ -50,6 +53,21 @@ $.fn.isOnScreen = function(){
     
     return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
 };
+
+//jQuery to check if navbar is at top of page
+
+
+
+$window.scroll(function() {
+    if ( $window.scrollTop() >= distance && !navbar_top) {
+        $('nav.navbar').toggleClass("navbar-fixed-top");
+        navbar_top = true;
+    }
+    if($('#intro-block').isOnScreen() && navbar_top){
+        navbar_top = false;
+        $('nav.navbar').toggleClass("navbar-fixed-top");
+    }
+});
 
 function scrollOnOne(){
     if(!photoOneOnScreen){

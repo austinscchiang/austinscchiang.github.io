@@ -19,11 +19,17 @@ body {
   margin: 0 auto;
   text-align: center;
 }
+.gray-text {
+  color: gray;
+}
 .black-text {
   color: black;
 }
 .white-text {
   color: white;
+}
+.title-block{
+  height: 93vh !important;
 }
 .text-block {
   background-color: white;
@@ -61,7 +67,7 @@ body {
 
 /*---------------------Divs--------------------------------*/
 #intro{
-  padding-top: 40vh;
+  padding-top: 37vh;
 }
 
 
