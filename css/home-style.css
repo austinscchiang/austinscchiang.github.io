@@ -1,0 +1,88 @@
+/*--------------------- Typography ----------------------------*/
+
+body {
+  font-family: "Helvetica";
+  color: gray;
+  margin-top:0;
+  margin-left:0;
+  margin-right:0;
+  margin-bottom:0;
+  /*background-image:url('images/cat.jpg');*/
+
+}
+
+
+/*---------------------Classes--------------------------------*/
+.container {
+  min-width: 60%;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.black-text {
+  color: black;
+}
+.white-text {
+  color: white;
+}
+.text-block {
+  background-color: white;
+  height: 100vh;
+  width:100vw;
+  /*shadow for bottom of div*/
+  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+.non-text-block {
+  background-color: transparent;
+  height: 50vh ;
+  /*shadow for bottom of div*/
+  -moz-box-shadow: 0 -4px -4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 -4px -4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 -4px -4px rgba(0, 0, 0, 0.4);
+}
+
+
+.hero{
+  font-size: 9vh;
+  font-weight: bold;
+  letter-spacing: -3px;
+}
+
+.text{
+  font-size: 4vh;
+  letter-spacing: -1px;
+}
+/*no-title is for text blocks with no titles*/
+.no-title{ 
+  padding-top: 30vh;  
+}
+
+/*---------------------Divs--------------------------------*/
+#intro{
+  padding-top: 40vh;
+}
+
+
+#title{
+  padding-top: 20vh; 
+}
+
+/*---------------------Bootstrap Overrides-----------------*/
+.navbar {
+  border-radius:0 !important;
+}
+.container-fluid {
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+/*--------------------- Images ----------------------------*/
+html { 
+  /*set background image */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
