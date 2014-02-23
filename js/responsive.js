@@ -8,19 +8,15 @@ $('body').scrollspy({ target: '.navbar-collapse' });
 
 function adjustBlockSize() {
     var heroBlockArray = document.querySelectorAll(".hero");
-    console.log(heroBlockArray);
     var block;
     for(var b = 0; b <heroBlockArray.length ; b++){
     	block = heroBlockArray[b];
-    	console.log(block);
 	    block.style.fontSize = "9vh";// change the font size
 	    block.style.paddingTop="40vh 0 40vh 0";
 	}
 	var textBlockArray = document.querySelectorAll(".text");
-    console.log(textBlockArray);
     for(var b = 0; b <textBlockArray.length ; b++){
     	block = textBlockArray[b];
-    	console.log(block);
 	    block.style.fontSize = "4vh";// change the font size
 	    block.style.paddingTop="40vh 0 40vh 0";
 	}
