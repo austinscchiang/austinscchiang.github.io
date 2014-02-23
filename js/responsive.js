@@ -30,10 +30,35 @@ function setIntroBlockStyle(block){
 	block.style.fontSize = "9vh";// change the font size
 	block.style.paddingTop="40vh 0 40vh 0"; // top/right/bottom/left
 }
-
+ 
+//if window is resized, adjust webpage specs to respond
 window.onresize = function(e){
 	adjustBlockSize();
 };
+
+//jQuery for smooth-scrolling with navbar links
+
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        //we dont want an extra offset if returning to top of page
+        if(target.selector == "#intro-block"){ 
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+        } else {
+            $('html,body').animate({
+              scrollTop: target.offset().top + 70
+            }, 1000);
+        }
+        return false;
+      }
+    }
+  });
+});
 
 
 //jQuery function to check if element is onscreen
@@ -69,7 +94,13 @@ $window.scroll(function() {
         navbar_top = false;
         $('nav.navbar').toggleClass("navbar-fixed-top");
     }
+
+    scrollOnOne();
+    scrollOnTwo();
+    scrollOnThree();
 });
+
+
 
 function scrollOnOne(){
     if(!photoOneOnScreen){
@@ -112,22 +143,4 @@ function scrollOnThree(){
         }
     }
 }
-// function placeNavBar(){
-//     var distance = $('div').offset().top,
-//     $window = $(window);
 
-// $window.scroll(function() {
-//     if ( $window.scrollTop() >= distance ) {
-//         // Your div has reached the top
-//     }
-// });
-// }
-
-
-
-$(window).scroll(function(){
-    scrollOnOne();
-    scrollOnTwo();
-    scrollOnThree();
-
-});
