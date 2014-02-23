@@ -65,15 +65,17 @@ body {
   padding-top: 30vh;  
 }
 
+.title{
+  padding-top: 20vh; 
+}
+
 /*---------------------Divs--------------------------------*/
 #intro{
   padding-top: 37vh;
 }
 
 
-#title{
-  padding-top: 20vh; 
-}
+
 
 /*---------------------Bootstrap Overrides-----------------*/
 .navbar {

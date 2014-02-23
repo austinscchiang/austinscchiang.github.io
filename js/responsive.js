@@ -4,6 +4,8 @@ var photoThreeOnScreen = false;
 var distance = $('nav.navbar').offset().top, $window = $(window);
 var navbar_top = false;
 
+$('body').scrollspy({ target: '.navbar-collapse' });
+
 function adjustBlockSize() {
     var heroBlockArray = document.querySelectorAll(".hero");
     console.log(heroBlockArray);
