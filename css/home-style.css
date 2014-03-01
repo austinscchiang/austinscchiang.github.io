@@ -11,13 +11,24 @@ body {
 
 }
 
+/*---------------------Footer--------------------------------*/
+footer {
+  background-color: white;
+  border-top: 1px solid #B8B8B8; 
+  margin-bottom: 0;  
+  background-color: #e7e7e7;
+  color: #888888;
+}
 
 /*---------------------Classes--------------------------------*/
 .container {
   min-width: 60%;
-  width: 70%;
+  width: 60% !important;
   margin: 0 auto;
   text-align: center;
+}
+.gray-text {
+  color: gray;
 }
 .black-text {
   color: black;
@@ -25,10 +36,12 @@ body {
 .white-text {
   color: white;
 }
+.title-block{
+  height: 93vh !important;
+}
 .text-block {
   background-color: white;
   height: 100vh;
-  width:100vw;
   /*shadow for bottom of div*/
   -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
@@ -56,18 +69,29 @@ body {
 }
 /*no-title is for text blocks with no titles*/
 .no-title{ 
-  padding-top: 30vh;  
+  margin-top: 30vh;  
+}
+
+.title{
+  margin-top: 20vh; 
 }
 
 /*---------------------Divs--------------------------------*/
 #intro{
-  padding-top: 40vh;
+  margin-top: 37vh;
+}
+
+#about-me-text{
+  text-align: justify; !important;
+}
+#portrait {
+  float:left;
+  padding-right: 50px;
+  height: auto;
 }
 
 
-#title{
-  padding-top: 20vh; 
-}
+
 
 /*---------------------Bootstrap Overrides-----------------*/
 .navbar {
