@@ -41,7 +41,9 @@ $(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         //we dont want an extra offset if returning to top of page
-        if(target.selector == "#intro-block"){ 
+        var fixed_navbar_exists = document.querySelectorAll(".navbar-fixed-top");
+        var navbar = document.querySelectorAll(".navbar");
+        if(target.selector == "#intro-block" || fixed_navbar_exists.length == 0){ 
             $('html,body').animate({
               scrollTop: target.offset().top
             }, 1000);
