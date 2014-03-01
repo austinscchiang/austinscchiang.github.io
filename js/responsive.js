@@ -6,6 +6,12 @@ var navbar_top = false;
 
 $('body').scrollspy({ target: '.navbar-collapse' });
 
+function introBlockResize(){
+    var introBlock = document.getElementById("intro-block");
+    var navbar = document.querySelectorAll(".navbar");
+    introBlock.style.height = document.documentElement.clientHeight - navbar[0].style.height;
+}
+
 function adjustBlockSize() {
     var heroBlockArray = document.querySelectorAll(".hero");
     var block;
