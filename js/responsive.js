@@ -6,40 +6,46 @@ var navbar_top = false;
 
 $('body').scrollspy({ target: '.navbar-collapse' });
 
-function introBlockResize(){
+
+function adjustAllBlockSizes() {
+    var heroBlockArray = document.querySelectorAll(".hero");
+    var block;
+    for(var b = 0; b <heroBlockArray.length ; b++){
+    	block = heroBlockArray[b];
+	    setHeroBlockStyle(block);
+	}
+	var textBlockArray = document.querySelectorAll(".text");
+    for(var b = 0; b <textBlockArray.length ; b++){
+    	block = textBlockArray[b];
+	    setTextBlockStyle(block);
+	}
+}
+
+/*********************** Set Block Styles **********************/
+function setHeroBlockStyle(block) {
+	block.style.fontSize = "9vmin";// change the font size
+	block.style.paddingTop="40vh 0 40vh 0"; // top/right/bottom/left
+}
+
+function setTextBlockStyle(block) {
+    block.style.fontSize = "4vmin";// change the font size
+    block.style.paddingTop="40vh 0 40vh 0";
+}
+
+function resizeIntroBlock(){
     var introBlock = document.getElementById("intro-block");
     var navbar = document.querySelectorAll(".navbar");
     introBlock.style.height = document.documentElement.clientHeight - navbar[0].style.height;
 }
 
-function adjustBlockSize() {
-    var heroBlockArray = document.querySelectorAll(".hero");
-    var block;
-    for(var b = 0; b <heroBlockArray.length ; b++){
-    	block = heroBlockArray[b];
-	    block.style.fontSize = "9vh";// change the font size
-	    block.style.paddingTop="40vh 0 40vh 0";
-	}
-	var textBlockArray = document.querySelectorAll(".text");
-    for(var b = 0; b <textBlockArray.length ; b++){
-    	block = textBlockArray[b];
-	    block.style.fontSize = "4vh";// change the font size
-	    block.style.paddingTop="40vh 0 40vh 0";
-	}
-}
 
-function setIntroBlockStyle(block){
-	block.style.fontSize = "9vh";// change the font size
-	block.style.paddingTop="40vh 0 40vh 0"; // top/right/bottom/left
-}
- 
-//if window is resized, adjust webpage specs to respond
+/*********************** Window Resize **********************/
 window.onresize = function(e){
-	adjustBlockSize();
+	adjustAllBlockSizes();
 };
 
-//jQuery for smooth-scrolling with navbar links
 
+/*********************** Smooth Scrolling **********************/
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -65,8 +71,7 @@ $(function() {
 });
 
 
-//jQuery function to check if element is onscreen
-
+/*********************** If Element is On Screen **********************/
 $.fn.isOnScreen = function(){
     
     var win = $(window);
@@ -85,28 +90,28 @@ $.fn.isOnScreen = function(){
     return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
 };
 
-//jQuery to check if navbar is at top of page
 
-
-
+/*********************** Upon Scrolling **********************/
 $window.scroll(function() {
     if ( $window.scrollTop() >= distance && !navbar_top) {
         $('nav.navbar').toggleClass("navbar-fixed-top");
         navbar_top = true;
     }
-    if($('#intro-block').isOnScreen() && navbar_top){
+    if ($('#intro-block').isOnScreen() && navbar_top){
         navbar_top = false;
         $('nav.navbar').toggleClass("navbar-fixed-top");
     }
-
-    scrollOnOne();
-    scrollOnTwo();
-    scrollOnThree();
+    showImageForPosition();
 });
 
+function showImageForPosition() {
+    showImageOne();
+    showImageTwo();
+    showImageThree();
+}
 
-
-function scrollOnOne(){
+/*********************** Show Image Functions **********************/
+function showImageOne() {
     if(!photoOneOnScreen){
         if($('.photo-one').isOnScreen()){
             photoOneOnScreen = true;
@@ -120,7 +125,7 @@ function scrollOnOne(){
     }
 }
 
-function scrollOnTwo(){
+function showImageTwo(){
     if(!photoTwoOnScreen){
         if($('.photo-two').isOnScreen()){
             photoOneOnScreen = false;
@@ -134,7 +139,7 @@ function scrollOnTwo(){
     }
 }
 
-function scrollOnThree(){
+function showImageThree(){
     if(!photoThreeOnScreen){
         if($('.photo-three').isOnScreen()){
             photoOneOnScreen = false;
