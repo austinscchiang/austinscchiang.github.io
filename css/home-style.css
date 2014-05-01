@@ -87,7 +87,11 @@ footer {
 #portrait {
   float:left;
   padding-right: 50px;
-  height: auto;
+  max-width:10vw;
+  min-width: 80px;
+  max-height:35vh;
+  width:auto;
+  height:auto;
 }
 
 
