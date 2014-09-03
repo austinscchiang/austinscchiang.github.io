@@ -6,6 +6,12 @@ var navbar_top = false;
 
 $('body').scrollspy({ target: '.navbar-collapse' });
 
+function introBlockResize(){
+    var introBlock = document.getElementById("intro-block");
+    var navbar = document.querySelectorAll(".navbar");
+    introBlock.style.height = document.documentElement.clientHeight - navbar[0].style.height;
+}
+
 function adjustBlockSize() {
     var heroBlockArray = document.querySelectorAll(".hero");
     var block;
@@ -108,7 +114,7 @@ function scrollOnOne(){
             photoThreeOnScreen = false;
         }
         if(photoOneOnScreen){
-            document.body.style.background="url('images/image.jpg') no-repeat center center fixed";
+            document.body.style.background="url('images/bg_qnc_test.jpg') no-repeat center center fixed";
             document.body.style.backgroundSize = "cover";
         }
     }
@@ -122,7 +128,7 @@ function scrollOnTwo(){
             photoThreeOnScreen = false;
         }
         if(photoTwoOnScreen){
-            document.body.style.background="url('images/cat.jpg') no-repeat center center fixed";
+            document.body.style.background="url('images/bg_hallway_test.jpg') no-repeat center center fixed";
             document.body.style.backgroundSize = "cover";
         }
     }
@@ -136,7 +142,7 @@ function scrollOnThree(){
             photoThreeOnScreen = true;
         }
         if(photoThreeOnScreen){
-            document.body.style.background="url('images/clock.jpg') no-repeat center center fixed";
+            document.body.style.background="url('images/bg_blue_sheets_test.jpg') no-repeat center center fixed";
             document.body.style.backgroundSize = "cover";
         }
     }
