@@ -38,6 +38,7 @@ footer {
   margin: 10px auto;
   top:0;
   bottom:0;
+  margin-top: -80px;
   max-width:100%;
   max-height:100%;
   padding-left: 30px;
@@ -57,9 +58,22 @@ footer {
   width: 419px;
   font-weight: bold;
   font-size: 50px;
-  /*margin: 0px 30px 0px 30px;*/
+  padding: 0px 10px 0px 10px;
+  cursor: pointer;
+}
+
+.work-header-text {
+  width: 740px;
+  font-weight: bold;
+  font-size: 50px;
   padding: 0px 10px 0px 10px;
 }
+
+  .work-header-text a {
+    color: inherit;
+    text-decoration: none;
+  }
+
 .gray-text {
   color: gray;
 }
@@ -141,6 +155,16 @@ footer {
   color: #A7DBD8;
 }
 
+#kik{
+  background-color: #81C924;
+  color: white;
+}
+
+#pivotal{
+  background-color: #026ED0;
+  color: white;
+}
+
 #intro-text{
   font-size: 70px;
 
@@ -154,12 +178,19 @@ footer {
 #about-text{
   display: none;
   font-size: 30px;
+  color: #3B8686;
+  /*font-family: 'Source Sans Pro', sans-serif;*/
+  font-family: 'Raleway', sans-serif;
 }
 
 #work-text{
   display: none;
-  font-size: 30px;
+  font-size: 20px;
 }
+  #work-text span{
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+    font-family: 'Raleway', sans-serif;
+  }
 
 #contact-text{
   display: none;
