@@ -1,5 +1,7 @@
 /*--------------------- Typography ----------------------------*/
 
+
+
 body {
   font-family: "Helvetica";
   color: gray;
@@ -193,8 +195,11 @@ footer {
   }
 
 #contact-text{
+  position: absolute;
+  top: 50%;
   display: none;
   font-size: 30px;
+  color: #A7DBD8;
 }
 
 
