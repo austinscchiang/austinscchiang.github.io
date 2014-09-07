@@ -64,72 +64,9 @@ footer {
   cursor: pointer;
 }
 
-.work-header-text {
-  width: 740px;
-  font-weight: bold;
-  font-size: 50px;
-  padding: 0px 10px 0px 10px;
-}
 
-  .work-header-text a {
-    color: inherit;
-    text-decoration: none;
-  }
+/*---------------------IDs--------------------------------*/
 
-.gray-text {
-  color: gray;
-}
-.black-text {
-  color: black;
-}
-.white-text {
-  color: white;
-}
-.title-block{
-  height: 93vh !important;
-}
-.text-block {
-  background-color: white;
-  height: 100vh;
-  /*shadow for bottom of div*/
-  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-}
-.non-text-block {
-  background-color: transparent;
-  height: 50vh ;
-  /*shadow for bottom of div*/
-  -moz-box-shadow: 0 -4px -4px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0 -4px -4px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 -4px -4px rgba(0, 0, 0, 0.4);
-}
-
-
-.hero{
-  font-size: 9vh;
-  font-weight: bold;
-  letter-spacing: -3px;
-}
-
-.text{
-  font-size: 4vh;
-  letter-spacing: -1px;
-}
-/*no-title is for text blocks with no titles*/
-.no-title{ 
-  margin-top: 30vh;  
-}
-
-.title{
-  margin-top: 20vh; 
-}
-
-/*---------------------Divs--------------------------------*/
-
-#about-me-text{
-  text-align: justify; !important;
-}
 #portrait {
   float:left;
   padding-right: 50px;
@@ -157,18 +94,10 @@ footer {
   color: #A7DBD8;
 }
 
-#kik{
-  background-color: #81C924;
-  color: white;
-}
-
-#pivotal{
-  background-color: #026ED0;
-  color: white;
-}
-
 #intro-text{
   font-size: 70px;
+  position: relative;
+  left: 20%;
 
 }
 
@@ -178,29 +107,40 @@ footer {
 }
 
 #about-text{
+  position: relative;
+  top: 20%;
   display: none;
   font-size: 30px;
-  color: #3B8686;
-  /*font-family: 'Source Sans Pro', sans-serif;*/
   font-family: 'Raleway', sans-serif;
 }
+
+  #about-text a{
+    color: inherit;
+    border-bottom: 1px dotted gray;
+    text-decoration: none;
+  }
+    #about-text a:hover{
+      color: black;
+    }
 
 #work-text{
   display: none;
   font-size: 20px;
+  font-family: 'Raleway', sans-serif;
 }
-  #work-text span{
-    /*font-family: 'Source Sans Pro', sans-serif;*/
-    font-family: 'Raleway', sans-serif;
-  }
 
 #contact-text{
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: 30%;
   display: none;
   font-size: 30px;
   color: #A7DBD8;
 }
+  #contact-text a{
+    color: inherit;
+    text-decoration: none;
+    letter-spacing: 140px;
+  }
 
 
 
