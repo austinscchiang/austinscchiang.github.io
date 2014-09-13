@@ -63,6 +63,7 @@ section{
 	padding-top: 35vh;
 	padding-bottom: 35vh;
 	font-size: 40px;
+	font-weight: lighter;
 	text-align: center;
 	font-family: "Helvetica";
 }
@@ -135,4 +136,12 @@ section{
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
 }
+	#copyright-text a{
+	    color: inherit;
+	    border-bottom: 1px dotted gray;
+	    text-decoration: none;
+	}
+	    #copyright-text a:hover{
+	      color: black;
+	    }
 
