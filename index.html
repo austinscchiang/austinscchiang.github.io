@@ -12,55 +12,80 @@
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-  <div class = "container">
-    <div class = "sidebar-container">
-      <div class = "sidebar-text" id = "intro">
-        AUSTIN CHIANG</br>
-      </div>
-      <div class = "sidebar-text" id = "about">
-        ABOUT</br>
-      </div>
-      <div class = "sidebar-text" id = "work">
-        WORK</br>
-      </div>
-      <div class = "sidebar-text" id = "contact">
-        CONTACT</br>
-      </div>
-    </div>
-    <div class = "main-container">
-      <div id = "intro-text">
-        <img src="images/headshot.png">
-      </div>
-      <div id = "about-text">
-        Hi! I'm a <a href = "https://uwaterloo.ca/software-engineering/" target="_blank">Software Engineering</a> student at the <a href = "https://uwaterloo.ca/" target="_blank">University of Waterloo</a>, currently interning at <a href = "http://www.kik.com/" target="_blank">Kik</a> as a mobile developer. You can often find me playing frisbee, at hackathons, or chilling with friends in the software lounge.
-      </div>
-      <div id = "work-text">
-        <h1>MOBILE DEVELOPER <a href = "http://www.kik.com" target="_blank"><img src="images/kik-logo.png" alt="alt text" height = 35/></a></h1>
-        <h4>SEPTEMBER 2014 to CURRENT</h4>
-          Currently working here, will update with details when I can!
-
-        <h1>AGILE ENGINEER <a href = "http://www.pivotallabs.com" target="_blank"><img src="images/pivotal-logo.png" alt="alt text" height = 35/></a></h1>
-        <h4>JANUARY to APRIL 2014</h4>
-        <ul>
-          <li>
-            Implemented features and bug fixes in mobile applications for Android/iOS, such as concurrent AMQP messaging and UI/UX interaction
-          </li>
-          <li>
-            Developed web applications with frameworks such as Rails and AngularJS in a TDD environment (Jasmine, Rspec)
-          </li>
-        </ul>
-        <a href = "austin_chiang_resume.pdf" target="_blank" style = "float:none; text-align:center;">Full Résumé</a>
-      </div>
-      <div id = "contact-text">
-        <a href = "mailto:austinscchiang@gmail.com" target="_blank"><i class="fa fa-inbox"></i></a>
-        <a href = "http://www.github.com/austinscchiang" target="_blank"><i class="fa fa-github"></i></a>
-        <a href = "http://ca.linkedin.com/pub/austin-chiang/58/975/733" target="_blank"><i class="fa fa-linkedin"></i></a>
-        <a href = "https://twitter.com/austinscchiang" target="_blank"><i class="fa fa-twitter"></i></a>
-        <i class="fa fa-spotify"></i>
-        <span class="stretch"></span>
-      </div>
-    </div>
+  <nav class = "navbar">
+    <a href="/html/">HTML</a>
+    <a href="/css/">CSS</a>
+    <a href="/js/">JavaScript</a>
+    <a href="/jquery/">jQuery</a>
+  </nav>
+  <div class = "title">
+    <h1>Austin Chiang</h1>
   </div>
+  <div class = "blank" id = "about-text">
+    Hi! I'm a <a href = "https://uwaterloo.ca/software-engineering/" target="_blank">Software Engineering</a> student at the <a href = "https://uwaterloo.ca/" target="_blank">University of Waterloo</a>, currently interning at <a href = "http://www.kik.com/" target="_blank">Kik</a> as a mobile developer. You can often find me playing frisbee, at hackathons, or chilling with friends in the software lounge.
+  </div>
+
+  <div class = "transparent" id = "projects-text">
+    <h1>Projects</h1>
+    <ul>
+      <li>
+        <figure>
+          <a href = "https://play.google.com/store/apps/details?id=com.ac.austin&hl=en" target="_blank"><img src="images/mcticon.png" alt="alt text" height = 100/></a>
+          <figcaption>Morse Code Translator for Android</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <a href = "https://play.google.com/store/apps/details?id=com.ac.austin&hl=en" target="_blank"><img src="images/mcticon.png" alt="alt text" height = 100/></a>
+          <figcaption>Morse Code Translator for Android</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <a href = "https://play.google.com/store/apps/details?id=com.ac.austin&hl=en" target="_blank"><img src="images/mcticon.png" alt="alt text" height = 100/></a>
+          <figcaption>Morse Code Translator for Android</figcaption>
+        </figure>
+      </li>
+    </ul>
+
+
+  </div>
+
+  <div class = "blank" id = "work-text">
+    <h2>Mobile Developer <a href = "http://www.kik.com" target="_blank"><img src="images/kik-logo.png" alt="alt text" height = 35/></a></h2>
+    <h4>SEPTEMBER 2014 to CURRENT</h4>
+      Currently working here, will update with details when I can!
+
+    <h2>Agile Engineer <a href = "http://www.pivotallabs.com" target="_blank"><img src="images/pivotal-logo.png" alt="alt text" height = 35/></a></h2>
+    <h4>JANUARY to APRIL 2014</h4>
+    <ul>
+      <li>
+        Implemented features and bug fixes in mobile applications for Android/iOS, such as concurrent AMQP messaging and UI/UX interaction
+      </li>
+      <li>
+        Developed web applications with frameworks such as Rails and AngularJS in a TDD environment (Jasmine, Rspec)
+      </li>
+    </ul>
+  </div>
+  <div class = "transparent" id = "contact-text">
+    <a href = "mailto:austinscchiang@gmail.com" target="_blank"><i class="fa fa-inbox"></i></a>
+    <a href = "http://www.github.com/austinscchiang" target="_blank"><i class="fa fa-github"></i></a>
+    <a href = "http://ca.linkedin.com/pub/austin-chiang/58/975/733" target="_blank"><i class="fa fa-linkedin"></i></a>
+    <a href = "https://twitter.com/austinscchiang" target="_blank"><i class="fa fa-twitter"></i></a>
+    <i class="fa fa-spotify"></i>
+    <span class="stretch"></span>
+  </div>
+  <div class = "blank" id = "copyright-text">
+    Copyright © 2014 by Austin Chiang
+  </div>
+
+
+
+
+
+
+
+
   <script src="js/jquery-1.9.1.min.js" type="text/javaScript"></script>
   <script src="js/transition.js" type="text/javaScript"></script>
 </body>
