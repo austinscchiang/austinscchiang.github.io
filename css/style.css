@@ -17,12 +17,14 @@ section{
 /*--------------------- Navbar ----------------------------*/
 .navbar{
 	color: white;
-	word-spacing: 30px;
+	word-spacing: 100px;
 	text-align: center;
 
-	background: black;
+	position: fixed;
+	width:100%;
+	background-color:rgba(0, 0, 0, 0.5);
 	margin: 0 0 0 0;
-	padding: 0 0 0 0;
+	padding: 20px 0 0 0;
 }
 	.navbar a{
 	    color: inherit;
@@ -30,6 +32,31 @@ section{
 	    font-family: 'Source Sans Pro', sans-serif;
 
 	}
+
+/*--------------------- Mobile ----------------------------*/
+@media (max-width: 480px) {
+}
+
+/*--------------------- Desktop ----------------------------*/
+@media (min-width: 481px) {
+	.transparent{
+		padding-left: 200px;
+		padding-right: 200px;
+	}
+		.transparent h1{
+			font-size: 35px;
+		}
+	.blank{
+		padding-left: 200px;
+		padding-right: 200px;
+	}
+		.blank h1{
+			font-size: 35px;
+		}
+	#about-text{
+		font-size: 25px;
+	}
+}
 
 /*--------------------- Section ----------------------------*/
 .title{
@@ -42,12 +69,10 @@ section{
 .transparent{
 	background-color:rgba(0, 0, 0, 0.5);
 	margin: 0 0 0 0;
-	padding: 0 0 0 0;
 }
 .blank{
 	background-color: white;
 	margin: 0 0 0 0;
-	padding: 0 0 0 0;
 }
 .stretch {
     width: 100%;
@@ -92,7 +117,8 @@ section{
 	}
 
 #contact-text{
-	color: #A7DBD8;
+	font-family: 'Raleway', sans-serif;
+	color: white;
 	text-align: justify;
 	-ms-text-justify: distribute-all-lines;
 	text-justify: distribute-all-lines;
