@@ -69,11 +69,13 @@ section{
 }
 .transparent{
 	background-color:rgba(0, 0, 0, 0.5);
-	margin: 0 0 0 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 .blank{
 	background-color: white;
-	margin: 0 0 0 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 .stretch {
     width: 100%;
@@ -81,6 +83,7 @@ section{
     font-size: 0;
     line-height: 0
 }
+
 
 #about-text{
 	color: gray;
