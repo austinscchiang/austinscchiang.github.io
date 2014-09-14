@@ -69,18 +69,26 @@ section{
 	font-size: 40px;
 	font-weight: lighter;
 	text-align: center;
-	font-family: "Helvetica";
+	color: #154971;
+	font-family: 'Raleway', sans-serif;
 }
 .transparent{
 	background-color:rgba(0, 0, 0, 0.5);
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
+	.transparent h1{
+		text-align: center;
+	}
 .blank{
 	background-color: white;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
+	.blank h1{
+		text-align: center;
+		color: #154971;
+	}
 .stretch {
     width: 100%;
     display: inline-block;
