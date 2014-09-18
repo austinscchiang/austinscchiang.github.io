@@ -1,6 +1,7 @@
 /*--------------------- Body ----------------------------*/
 body{
 	margin: 0 0 0 0;
+	padding: 0 0 0 0;
 	background-image: url("../images/bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -8,6 +9,10 @@ body{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+.jsc-sidebar-content{
+
+
 }
 section{
 	margin: 0 0 0 0 !important;
@@ -37,12 +42,18 @@ section{
 			border-bottom: 5px solid #65AAE1;
 		}
 
-/*--------------------- Mobile ----------------------------*/
-@media (max-width: 480px) {
-}
 
+
+@media (max-width: 480px) {
+  .wide-view {
+    display: none;
+  }
+}
 /*--------------------- Desktop ----------------------------*/
 @media (min-width: 481px) {
+	.narrow-view{
+		display: none;
+	}
 	.transparent{
 		padding-left: 200px;
 		padding-right: 200px;
@@ -63,6 +74,8 @@ section{
 }
 
 /*--------------------- Section ----------------------------*/
+
+
 .title{
 	padding-top: 35vh;
 	padding-bottom: 35vh;
