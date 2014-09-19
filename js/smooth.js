@@ -1,7 +1,7 @@
 $(function() {
   console.log($( window ).width());
   var screenWidth = $( window ).width();
-  if (screenWidth > 480) {
+  if (screenWidth > 800) {
     $('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);

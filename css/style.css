@@ -34,7 +34,7 @@ section{
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
 	.wide-view {
 		display: none;
 	}
@@ -72,7 +72,7 @@ section{
 	}
 }
 /*--------------------- Desktop ----------------------------*/
-@media (min-width: 481px) {
+@media (min-width: 801px) {
 	body{
 		background-image: url("../images/bg.jpg");
 		background-repeat: no-repeat;
