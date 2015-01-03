@@ -13,6 +13,7 @@
 </head>
 <body>
   <div class="wrapper jsc-sidebar-content jsc-sidebar-pulled">
+    <div class="particles-cover" id="particles"></div>
     <nav class = "narrow-view">
       <a href="#" class="jsc-sidebar-trigger"><i class="fa fa-bars"></i></a>
     </nav>
@@ -27,7 +28,7 @@
     </div>
     <div class = "blank" id = "about-text">
       <h1>About Me</h1>
-      Hi! I'm a <a href = "https://uwaterloo.ca/software-engineering/" target="_blank">Software Engineering</a> student at the <a href = "https://uwaterloo.ca/" target="_blank">University of Waterloo</a>, currently interning at <a href = "http://www.kik.com/" target="_blank">Kik</a> as a mobile developer. You can often find me playing frisbee, at hackathons, or chilling with friends in the software lounge.
+      Hi! I'm a <a href = "https://uwaterloo.ca/software-engineering/" target="_blank">Software Engineering</a> student at the <a href = "https://uwaterloo.ca/" target="_blank">University of Waterloo</a>, last seen interning at <a href = "http://www.kik.com/" target="_blank">Kik</a> as a software developer. You can often find me playing frisbee, at hackathons, or chilling with friends in the UW software lounge.
     </div>
 
     <div class = "transparent" id = "projects-text">
@@ -35,14 +36,20 @@
       <ul>
         <li>
           <figure>
+            <a href = "http://yolloween.herokuapp.com/" target="_blank"><img src="images/yolloween_icon.png" alt="alt text" height = 100/></a>
+            <figcaption><b>Yolloween:</b></br>YHack hack that shows which houses has the best Halloween candy</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
             <a href = "https://github.com/austinscchiang/leeway" target="_blank"><img src="images/leeway_icon.png" alt="alt text" height = 100/></a>
-            <figcaption>Leeway for Android:</br>Hack the North hack to vote for hangouts with friends</figcaption>
+            <figcaption><b>Leeway for Android:</b></br>Hack the North hack to vote for hangouts with friends</figcaption>
           </figure>
         </li>
         <li>
           <figure>
             <a href = "https://play.google.com/store/apps/details?id=com.ac.austin&hl=en" target="_blank"><img src="images/mct_icon.png" alt="alt text" height = 100/></a>
-            <figcaption>Morse Code Translator for Android: Translates morse code to text, audio and flashlight</br></figcaption>
+            <figcaption><b>Morse Code Translator for Android:</b> Translates morse code to text, audio and flashlight</br></figcaption>
           </figure>
         </li>
       </ul>
@@ -50,9 +57,16 @@
 
     <div class = "blank" id = "work-text">
       <h1>Work & Experience</h1>
-      <h2>Mobile Developer <a href = "http://www.kik.com" target="_blank"><img src="images/kik-logo.png" alt="alt text" height = 35/></a></h2>
-      <h4>SEPTEMBER 2014 to CURRENT</h4>
-        Currently working here, will update with details when I can!
+      <h2>Android Developer <a href = "http://www.kik.com" target="_blank"><img src="images/kik-logo.png" alt="alt text" height = 35/></a></h2>
+      <h4>SEPTEMBER 2014 to DECEMBER 2014</h4>
+      <ul>
+        <li>
+          Worked on the Android verion of the Kik messaging application with the core mobile team
+        </li>
+        <li>
+          Implemented main chat features including mute notifications, group administrator functionality, and brand chats
+        </li>
+      </ul>
 
       <h2>Agile Engineer <a href = "http://www.pivotallabs.com" target="_blank"><img src="images/pivotal-logo.png" alt="alt text" height = 35/></a></h2>
       <h4>JANUARY to APRIL 2014</h4>
@@ -75,7 +89,6 @@
       <span class="stretch"></span>
     </div>
     <div class = "blank" id = "copyright-text">
-      Photo credit and appreciation to photographer <a href = "http://ca.linkedin.com/in/surui" target="_blank">Rui Su</a>.<br>
       Copyright © 2014 by <a href = "http://austinchiang.me">Austin Chiang</a>.
     </div>
   </div>
@@ -90,6 +103,8 @@
   </nav>
 
   <script src="js/jquery-1.9.1.min.js" type="text/javaScript"></script>
+  <script type='text/javascript' src='js/jquery.particleground.min.js'></script>
+  <script type='text/javascript' src='js/particles-settings.js'></script>
   <script src="js/transition.js" type="text/javaScript"></script>
   <script src="js/smooth.js" type="text/javaScript"></script>
   <script src="js/sidebar.js"></script>
