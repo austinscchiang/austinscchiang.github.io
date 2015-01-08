@@ -1,0 +1,202 @@
+/*--------------------- Body ----------------------------*/
+body{
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+section{
+	margin: 0 0 0 0 !important;
+	padding: 0 0 0 0;
+}
+
+/*--------------------- Navbar ----------------------------*/
+.navbar{
+	color: white;
+	word-spacing: 100px;
+	text-align: center;
+
+	position: fixed;
+	width:100%;
+	background-color:rgba(0, 0, 0, 0.5);
+	margin: 0 0 0 0;
+	padding: 20px 0 5px 0;
+}
+.navbar a{
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 5px solid transparent;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.navbar a:hover{
+	color: #65AAE1;
+	border-bottom: 5px solid #65AAE1;
+}
+.wrapper{
+	position: absolute;
+	z-index: 1;
+}
+
+
+
+@media (max-width: 800px) {
+	.wide-view {
+		display: none;
+	}
+	.title{
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.transparent{
+		padding-right: 20px;
+		padding-left: 20px;
+
+	}
+	.blank{
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.blank h1{
+		color: #798496;
+	}
+}
+/*--------------------- Desktop ----------------------------*/
+@media (min-width: 801px) {
+	.narrow-view{
+		display: none;
+	}
+	.transparent{
+		background-color:rgba(0, 0, 0, 0.5);
+		padding-left: 200px;
+		padding-right: 200px;
+	}
+	.transparent h1{
+		font-size: 35px;
+	}
+
+	.blank{
+		padding-left: 200px;
+		padding-right: 200px;
+	}
+	.blank h1{
+		font-size: 35px;
+		color: #154971;
+	}
+	#about-text{
+		font-size: 25px;
+	}
+}
+
+/*--------------------- Section ----------------------------*/
+
+
+.title{
+	color: white;
+	padding-top: 35vh;
+	padding-bottom: 35vh;
+	font-size: 40px;
+	font-weight: lighter;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+.transparent{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.transparent h1{
+	color: white;
+	text-align: center;
+}
+.blank{
+	background-color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.blank h1{
+	text-align: center;
+}
+.stretch {
+	width: 100%;
+	display: inline-block;
+	font-size: 0;
+	line-height: 0
+}
+.particles-cover {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+    z-index: -1;
+	background-color: black;
+}
+
+#particles {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#about-text{
+	color: gray;
+	font-family: 'Raleway', sans-serif;
+}
+#about-text a{
+	color: inherit;
+	border-bottom: 1px dotted gray;
+	text-decoration: none;
+}
+#about-text a:hover{
+	color: black;
+}
+
+#projects-text{
+	font-family: 'Raleway', sans-serif;
+	color: white;
+}
+#projects-text figure{
+	max-width: 150px;
+}
+#projects-text ul{
+	list-style-type: none;
+}
+#projects-text ul li{
+	display: inline-block;
+}
+
+#work-text{
+	color: gray;
+	font-family: 'Raleway', sans-serif;
+}
+#work-text a{
+	float: right;
+}
+
+#contact-text{
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	text-align: justify;
+	-ms-text-justify: distribute-all-lines;
+	text-justify: distribute-all-lines;
+}
+#contact-text a{
+	display: inline-block;
+	color: inherit;
+	text-decoration: none;
+}
+#contact-text a:hover{
+	color: #808080;
+}
+
+#copyright-text{
+	color: gray;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+#copyright-text a{
+	color: inherit;
+	border-bottom: 1px dotted gray;
+	text-decoration: none;
+}
+#copyright-text a:hover{
+	color: black;
+}
+
