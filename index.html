@@ -1,125 +1,16 @@
-<!DOCTYPE html>
-
-<html>
-<head>
-  <title>Austin Chiang</title>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-  <link rel="stylesheet" media="all" href="css/style.css" />
-  <link rel="stylesheet" media="all" href="css/sidebar.css" />
-  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-</head>
-<body>
-  <div class="wrapper jsc-sidebar-content jsc-sidebar-pulled">
-    <div class="particles-cover" id="particles"></div>
-    <nav class = "narrow-view">
-      <a href="#" class="jsc-sidebar-trigger"><i class="fa fa-bars"></i></a>
-    </nav>
-    <nav class = "navbar wide-view">
-      <a href="#about-text">ABOUT</a>
-      <a href="#projects-text">PROJECTS</a>
-      <a href="#work-text">EXPERIENCE</a>
-      <a href="#contact-text">CONTACT</a>
-    </nav>
-    <div class = "title">
-      <h1>Austin Chiang</h1>
-    </div>
-    <div class = "blank" id = "about-text">
-      <h1>About Me</h1>
-      Hi! I'm a <a href = "https://uwaterloo.ca/software-engineering/" target="_blank">Software Engineering</a> student at the <a href = "https://uwaterloo.ca/" target="_blank">University of Waterloo</a>, last seen interning at <a href = "http://www.kik.com/" target="_blank">Kik</a> as a software developer. You can often find me playing frisbee, at hackathons, or chilling with friends in the UW software lounge.
-    </div>
-
-    <div class = "transparent" id = "projects-text">
-      <h1>Projects</h1>
-      <ul>
-        <li>
-          <figure>
-            <a href = "http://yolloween.herokuapp.com/" target="_blank"><img src="images/yolloween_icon.png" alt="alt text" height = 100/></a>
-            <figcaption><b>Yolloween:</b></br>YHack hack that shows which houses has the best Halloween candy</figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <a href = "https://github.com/austinscchiang/leeway" target="_blank"><img src="images/leeway_icon.png" alt="alt text" height = 100/></a>
-            <figcaption><b>Leeway for Android:</b></br>Hack the North hack to vote for hangouts with friends</figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <a href = "https://play.google.com/store/apps/details?id=com.ac.austin&hl=en" target="_blank"><img src="images/mct_icon.png" alt="alt text" height = 100/></a>
-            <figcaption><b>Morse Code Translator for Android:</b> Translates morse code to text, audio and flashlight</br></figcaption>
-          </figure>
-        </li>
-      </ul>
-    </div>
-
-    <div class = "blank" id = "work-text">
-      <h1>Work & Experience</h1>
-      <h2>Android Developer <a href = "http://www.kik.com" target="_blank"><img src="images/kik-logo.png" alt="alt text" height = 35/></a></h2>
-      <h4>SEPTEMBER 2014 to DECEMBER 2014</h4>
-      <ul>
-        <li>
-          Worked on the Android verion of the Kik messaging application with the core mobile team
-        </li>
-        <li>
-          Implemented main chat features including mute notifications, group administrator functionality, and brand chats
-        </li>
-      </ul>
-
-      <h2>Agile Engineer <a href = "http://www.pivotallabs.com" target="_blank"><img src="images/pivotal-logo.png" alt="alt text" height = 35/></a></h2>
-      <h4>JANUARY to APRIL 2014</h4>
-      <ul>
-        <li>
-          Implemented features and bug fixes in mobile applications for Android/iOS, such as concurrent AMQP messaging and UI/UX interaction
-        </li>
-        <li>
-          Developed web applications with frameworks such as Rails and AngularJS in a TDD environment (Jasmine, Rspec)
-        </li>
-      </ul>
-    </div>
-    <div class = "transparent" id = "contact-text">
-      <h1>Contact Me</h1>
-      <a href = "mailto:austinscchiang@gmail.com" target="_blank"><i class="fa fa-inbox"></i></a>
-      <a href = "http://www.github.com/austinscchiang" target="_blank"><i class="fa fa-github"></i></a>
-      <a href = "http://ca.linkedin.com/pub/austin-chiang/58/975/733" target="_blank"><i class="fa fa-linkedin"></i></a>
-      <a href = "https://twitter.com/austinscchiang" target="_blank"><i class="fa fa-twitter"></i></a>
-      <i class="fa fa-spotify"></i>
-      <span class="stretch"></span>
-    </div>
-    <div class = "blank" id = "copyright-text">
-      Copyright © 2019 by <a href = "http://austinscchiang.github.io">Austin Chiang</a>.
-    </div>
-  </div>
-
-  <nav class="sidebar jsc-sidebar narrow-view" id="jsi-nav" data-sidebar-options="">
-    <ul class="sidebar-list">
-      <li><a href="#about-text" class="current">About</a></li>
-      <li><a href="#projects-text">Projects</a></li>
-      <li><a href="#work-text">Experience</a></li>
-      <li><a href="#contact-text">Contact</a></li>
-    </ul>
-  </nav>
-
-  <script src="js/jquery-1.9.1.min.js" type="text/javaScript"></script>
-  <script type='text/javascript' src='js/jquery.particleground.min.js'></script>
-  <script src="js/smooth.js" type="text/javaScript"></script>
-  <script src="js/sidebar.js"></script>
-  <script type='text/javascript' src='js/particles-settings.js'></script>
-    
-    <script>
-      $('#jsi-nav').sidebar({
-        trigger: '.jsc-sidebar-trigger',
-        scrollbarDisplay: true,
-        pullCb: function () {
-        },
-        pushCb: function () {
-        }
-      });
-
-  $('#particles').particleground();
-    </script>
-</body>
-</html>
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.38e53127d5efa77b2aeb.css" id="gatsby-global-css">@font-face{font-family:"Source Serif Pro";src:url(/static/SourceSerifPro-Regular-67a017e48d0bf5f7049daafd7ac68697.ttf)}body{margin:100px 0 0;font-family:"Source Serif Pro";color:#000;line-height:1.625;font-size:16px;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}a{text-decoration:none;color:#707070;border-bottom:2px dotted #707070}a:hover{color:#575757;border-bottom:2px dotted #575757}img{max-width:100px;border-radius:5px}.Layout-module--layout--3Pyz6{display:flex;flex-direction:row;justify-content:center}.Layout-module--layout__left--zBOxw{padding-left:25px;padding-right:25px;width:100%;max-width:600px;background:#fff;display:flex;flex-direction:column;justify-content:flex-start;flex-grow:1}</style><meta name="generator" content="Gatsby 2.29.1"/><title data-react-helmet="true">Austin Chiang</title><meta data-react-helmet="true" charSet="utf-8"/><link as="script" rel="preload" href="/webpack-runtime-9484b956cf5293414e59.js"/><link as="script" rel="preload" href="/framework-06f646d936b841f99ebd.js"/><link as="script" rel="preload" href="/app-3050acfb82ed0a1e9fff.js"/><link as="script" rel="preload" href="/styles-407fe62976dc5310c43e.js"/><link as="script" rel="preload" href="/component---src-components-about-about-tsx-edf6e0bd64a18db6ea10.js"/><link as="fetch" rel="preload" href="/page-data/index/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2298081887.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div><div class="Layout-module--layout--3Pyz6"><div class="Layout-module--layout__left--zBOxw"><div><style>
+.inline-images-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+</style>
+<div class="inline-images-container">
+  <img src="/headshot.jpg" alt="The original image" />
+</div>
+<p><strong>Hey! It's Austin. ✌️</strong></p>
+<p>I'm a software engineer at Facebook / Instagram living in Redwood City, California, where I'm making the infrastructure behind its social graph query language more efficient and intuitive.</p>
+<p>Previously, I studied software engineering at the University of Waterloo 🇨🇦, interning at Facebook, Uber, Bloomberg and Kik along the way. Understanding complex systems and building clean abstractions upon them pleases me. If you'd like to hear more about my past experience, you can check out my <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/austin-chiang-73397558">LinkedIn</a>.</p>
+<p>I'm an enthusiasm enthusiast. Hearing others talk feverishly yet <em>specifically</em> about their interests is my favorite thing to do; asking follow-up questions shamelessly is a close second. When I'm able to coalesce my thoughts in written form, I'll jot them down here. You can also catch me reading, playing ultimate frisbee, and trying to broaden my Spotify playlists.</p>
+<p>If you need to reach me, the best way to do so is by emailing me at <code>austinscchiang@gmail.com</code> ✉️.</p></div></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-05a1ef811a3c5c3b1aa6.js"],"app":["/app-3050acfb82ed0a1e9fff.js"],"component---src-components-about-about-tsx":["/component---src-components-about-about-tsx-edf6e0bd64a18db6ea10.js"]};/*]]>*/</script><script src="/polyfill-05a1ef811a3c5c3b1aa6.js" nomodule=""></script><script src="/component---src-components-about-about-tsx-edf6e0bd64a18db6ea10.js" async=""></script><script src="/styles-407fe62976dc5310c43e.js" async=""></script><script src="/app-3050acfb82ed0a1e9fff.js" async=""></script><script src="/framework-06f646d936b841f99ebd.js" async=""></script><script src="/webpack-runtime-9484b956cf5293414e59.js" async=""></script></body></html>
