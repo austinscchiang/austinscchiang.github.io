@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    margin-top: 100px;
+    font-family: $typographic-font-family;
+    color: $typographic-base-font-color;
+    line-height: $typographic-base-line-height;
+    font-size: $typographic-base-font-size;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+    color: $typographic-link-font-color;
+    border-bottom: 2px dotted $typographic-link-font-color;
+    &:hover {
+        color: darken($typographic-link-font-color, 10%);
+        border-bottom: 2px dotted darken($typographic-link-font-color, 10%);
+    }
+}
+
+img {
+    max-width: 100px;
+    border-radius: 5px;
+}
