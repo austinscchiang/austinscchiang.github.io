@@ -9,10 +9,16 @@ slug: "/about"
   justify-content: center;
   flex-wrap: wrap;
 }
+.inline-image-portrait img {
+  width: 100px;
+  height: 96px;
+}
 </style>
 
 <div class="inline-images-container">
-  <img src="/headshot.jpg" alt="The original image" />
+  <div class="inline-image-portrait">
+    <img src="/headshot.jpg" alt="The original image" />
+  </div>
 </div>
 
 **Hey! It's Austin. ✌️**
