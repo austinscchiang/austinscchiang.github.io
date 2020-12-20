@@ -1,6 +1,6 @@
 # What is this?
 
-This is the source code for my personal website, [`austinscchiang.github.io/`](https://austinscchiang.github.io/). Built using [gatsby.js](https://www.gatsbyjs.com/) and react.
+This is the source code for my personal website, [`austinscchiang.github.io`](https://austinscchiang.github.io/). Built using [gatsby.js](https://www.gatsbyjs.com/) and react.
 
 # Development
 
