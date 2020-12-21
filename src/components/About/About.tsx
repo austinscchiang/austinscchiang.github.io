@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../Layout"
+import Portrait from "../Portrait"
 
 type Data = {
   markdownRemark: {
@@ -21,6 +22,7 @@ export default function About({ data }: { data: Data }) {
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
+      <Portrait />
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   )

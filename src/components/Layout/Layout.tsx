@@ -19,7 +19,6 @@ type Data = {
         name: string
       }
       title: string
-      subTitle: string
     }
   }
 }
@@ -48,12 +47,7 @@ export const Layout = (props: Props) => (
             author {
               name
             }
-            menu {
-              label
-              path
-            }
             title
-            subtitle
           }
         }
       }

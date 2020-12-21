@@ -2,25 +2,6 @@
 slug: "/about"
 ---
 
-<style>
-.inline-images-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.inline-image-portrait img {
-  width: 100px;
-  height: 96px;
-}
-</style>
-
-<div class="inline-images-container">
-  <div class="inline-image-portrait">
-    <img src="/headshot.jpg" alt="The original image" />
-  </div>
-</div>
-
 **Hey! It's Austin. ✌️**
 
 I'm a software engineer at Facebook / Instagram living in Redwood City, California, where I'm making the infrastructure behind its social graph query language more efficient and intuitive.

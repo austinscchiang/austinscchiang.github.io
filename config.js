@@ -18,15 +18,30 @@ module.exports = {
   ],
   author: {
     name: "Austin Chiang",
-    photo: "/headshot.png",
-    photoLarge: "/photo2-large.png",
+    portrait: "/headshot.jpg",
     bio:
       'Software Engineer @ Facebook. Software Engineering \'17 @ UWaterloo. I take photos <a href="/gallery/">.',
-    contacts: {
-      email: "austinsschiang@gmail.com",
-      instagram: "austinscchiang",
-      twitter: "austinscchiang",
-      github: "austinscchiang",
-    },
+    contactLinks: [
+      {
+        name: "Instagram",
+        href: "https://www.instagram.com/austinscchiang/",
+        fontAwesomeClass: "instagram",
+      },
+      {
+        name: "Twitter",
+        href: "https://twitter.com/austinscchiang",
+        fontAwesomeClass: "twitter",
+      },
+      {
+        name: "Github",
+        href: "https://github.com/austinscchiang",
+        fontAwesomeClass: "github",
+      },
+      {
+        name: "LinkedIn",
+        href: "https://www.linkedin.com/in/austin-chiang-73397558",
+        fontAwesomeClass: "linkedin-in",
+      },
+    ],
   },
 }

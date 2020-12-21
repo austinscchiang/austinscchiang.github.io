@@ -1,0 +1,10 @@
+.contactLinks{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    a {
+        text-decoration: none;
+        border-bottom: none;
+    }
+}

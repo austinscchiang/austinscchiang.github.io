@@ -30,7 +30,6 @@ $ gatsby serve
 
 You can then view the hot-reloaded site at `http://localhost:9000/`.
 
-
 # Deployment
 
 There is already a script helper for deployment ready for you to use from `package.json`. You can simply:
@@ -38,5 +37,3 @@ There is already a script helper for deployment ready for you to use from `packa
 ```
 $ npm run deploy
 ```
-
-
